@@ -1,11 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <p>hello</p>
-</body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div style="flex: 1">hi</div>
+
+    <div id="main-right">
+      <div id="right">
+        <h2>Contact sales form</h2>
+        <p>Please fill out the form below to get started</p>
+
+        <div class="field">
+          <label for="website">Company Website</label>
+          <input type="text" id="website" placeholder="100xdevs.com" />
+        </div>
+
+        <div class="field">
+          <label for="email">Business Email</label>
+          <input type="text" id="email" placeholder="admin@100xdevs.com" />
+        </div>
+
+        <button>Next</button>
+      </div>
+    </div>
+  </body>
 </html>
