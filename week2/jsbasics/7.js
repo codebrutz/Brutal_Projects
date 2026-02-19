@@ -18,3 +18,16 @@ for (let i = 0; i < entries.length; i++) {
 }
 
 console.log(output);
+
+// attempt to refine the logic
+
+for (let key in given) {
+  temp.push([key, given[key]]); // directly push [key, value] pair
+
+  if (temp.length === size) {
+    output.push(temp);
+    temp = []; // reset temp
+  }
+}
+
+console.log(output);
