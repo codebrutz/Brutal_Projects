@@ -18,3 +18,6 @@ for (let i = 0; i < entries.length; i++) {
 }
 
 console.log(entries); // [["b",1], ["c",2], ["a",3]]
+
+const output = Object.entries(input).sort((a, b) => a[1] - b[1]);
+console.log(output);

@@ -9,3 +9,9 @@ for (let key in obj1) {
 }
 
 console.log(output); // ["b", "c"]
+for (let key in obj1) {
+  if (obj2.hasOwnProperty(key)) {
+    output.push(key);
+  }
+}
+console.log(output);
