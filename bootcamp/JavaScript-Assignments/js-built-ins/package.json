@@ -17,7 +17,6 @@
     "test-fibonacci": "npx jest ./tests/fibonacci.test.js",
     "test-perfect": "npx jest ./tests/perfectNumber.test.js",
     "test-all": "npx jest ./tests/"
-
   },
   "keywords": [],
   "author": "",
