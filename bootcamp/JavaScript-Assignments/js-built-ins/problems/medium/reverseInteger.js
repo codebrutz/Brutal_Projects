@@ -21,8 +21,20 @@
   - `npm run test-reverseInteger`
 */
 
-function reverseInteger(num) {
+function reverseInteger(n) {
   // Your code here
+  let sign = n < 0 ? -1 : 1;
+  n = Math.abs(n);
+
+  let reversed = 0;
+
+  while (n !== 0) {
+    let remainder = n % 10;
+    reversed = reversed * 10 + remainder;
+    n = Math.floor(n / 10);
+  }
+
+  return sign * reversed;
 }
 
 module.exports = reverseInteger;
