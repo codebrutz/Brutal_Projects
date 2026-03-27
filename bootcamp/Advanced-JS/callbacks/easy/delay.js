@@ -6,7 +6,10 @@
 // with `null` as the first argument and the provided value as the second argument.
 
 function delay(ms, value, callback) {
-   
+  function sigma() {
+    callback(null, value);
+  }
+  setTimeout(sigma, ms);
 }
-  
+
 module.exports = delay;
