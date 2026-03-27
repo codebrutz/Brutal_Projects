@@ -15,7 +15,7 @@ function fetchWithTimeout(url, ms, callback) {
     callback("Request Timed Out");
   }, ms);
 
-  global.fetch(url, (err, data) => {
+  fetch(url, (err, data) => {
     if (!timepassed) {
       clearTimeout(timerId);
       callback(null, data);
