@@ -7,7 +7,21 @@
 // the callback with the same result (or error) from the first invocation.
 
 function once(fn) {
+  let called = false;
+  let receiveddata;
+  return function (callback) {
+    if (called) {
+      callback(receiveddata);
+      return;
+    }
 
+    called = true;
+
+    fn((result) => {
+      receiveddata = result;
+      callback(result);
+    });
+  };
 }
 
 module.exports = once;
